@@ -1,0 +1,11 @@
+.container {
+  border: 1px solid black;
+  width: 400px;
+  margin: 20px;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  color: sienna;
+  font-weight: bold;
+}

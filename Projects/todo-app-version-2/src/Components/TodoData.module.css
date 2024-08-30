@@ -1,0 +1,13 @@
+.button {
+  min-width: 80px;
+  background-color: rgb(180, 4, 4);
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.kg-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}

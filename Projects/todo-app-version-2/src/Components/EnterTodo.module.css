@@ -1,0 +1,11 @@
+.input {
+  width: 100%;
+}
+.button1 {
+  min-width: 80px;
+  background-color: green;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
