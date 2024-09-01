@@ -6,12 +6,14 @@
 // import Box from "./Props/Box";
 // import Profile from "./Props/Profile";
 // import Galery from "./Components/Galery";
-import Profile from "./Components/Profile";
+// import Profile from "./Components/Profile";
+import PackingList from "./ConditionalRendering/PackingList";
 
 export default function App() {
   return (
     <div>
-      <Profile></Profile>
+      <PackingList></PackingList>
+      {/* <Profile></Profile> */}
 
       {/* <Galery></Galery> */}
 
