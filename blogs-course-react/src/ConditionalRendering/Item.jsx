@@ -1,6 +1,10 @@
-export default function Item({ name, isPacked }) {
-  if (isPacked) {
-    return <li className="item">{name} ✅</li>;
-  }
-  return <li className="item">{name} 🤩</li>;
+export default function Item({ name, importance }) {
+  return (
+    <div>
+      <li className="item">
+        {name}
+        {importance > 0 && <i>Importance: {importance}</i>}
+      </li>
+    </div>
+  );
 }

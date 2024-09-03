@@ -8,11 +8,15 @@
 // import Galery from "./Components/Galery";
 // import Profile from "./Components/Profile";
 import PackingList from "./ConditionalRendering/PackingList";
+// import Item1 from "./Extra Component for Reacts practice code/Item1";
+import DrinkList from "./ConditionalRendering/DrinkList";
 
 export default function App() {
   return (
     <div>
-      <PackingList></PackingList>
+      <DrinkList></DrinkList>
+      {/* <Item1></Item1> */}
+      {/* <PackingList></PackingList> */}
       {/* <Profile></Profile> */}
 
       {/* <Galery></Galery> */}
