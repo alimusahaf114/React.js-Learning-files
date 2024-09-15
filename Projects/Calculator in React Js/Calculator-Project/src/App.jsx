@@ -13,6 +13,15 @@ function App() {
     } else if (buttonText === "=") {
       const result = eval(calVal);
       setCalVal(result);
+    } else if (buttonText === "√") {
+      let squareRoot = Math.sqrt(calVal);
+      setCalVal(squareRoot);
+    } else if (buttonText === "Sq") {
+      let square = Math.pow(calVal, 2);
+      setCalVal(square);
+    } else if (buttonText === "Cu") {
+      let Cube = Math.pow(calVal, 3);
+      setCalVal(Cube);
     } else {
       const newDisplayValue = calVal + buttonText;
       setCalVal(newDisplayValue);
