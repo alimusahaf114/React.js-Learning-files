@@ -1,11 +1,19 @@
 .buttonContainer {
-  display: flex;
+  margin-top: 10px;
+  gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
 }
 .button {
-  width: 45px;
-  height: 45px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  height: 65px;
   margin: 3px;
   border: none;
+  border-radius: 20%;
+  background: linear-gradient(to bottom, #bb5676, #505dd4);
 }

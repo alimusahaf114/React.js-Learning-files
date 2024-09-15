@@ -1,5 +1,10 @@
 .display {
   margin: 10px;
-  width: 175px;
-  font-size: 25px;
+  width: 295px;
+  height: 99px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  border: none;
+  background: transparent;
 }

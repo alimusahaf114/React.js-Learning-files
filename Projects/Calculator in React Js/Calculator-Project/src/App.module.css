@@ -1,6 +1,9 @@
 .calculator {
   border: 1px solid rgb(170, 169, 169);
-  border-radius: 5px;
-  width: 200px;
+  background: linear-gradient(to right, #c33764, #1d2671);
+  border-radius: 10px;
+  width: 330px;
+  height: 500px;
+  padding-bottom: 30px;
   margin-top: 20px;
 }
