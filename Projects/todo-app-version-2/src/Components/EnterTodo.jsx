@@ -19,18 +19,23 @@ function EnterTodo({ onNewItem }) {
 
   return (
     <>
-      <div className="row">
+      <div className={styles.row}>
         <div className="col-6">
           <input
             type="text"
             value={todoName}
             placeholder="Enter text here..."
-            className={styles["input"]}
+            className={styles.input1}
             onChange={handleNameChange}
           />
         </div>
         <div className="col-4">
-          <input type="date" value={dueDate} onChange={handleDateChange} />
+          <input
+            className={styles.input2}
+            type="date"
+            value={dueDate}
+            onChange={handleDateChange}
+          />
         </div>
         <div className="col-2">
           <button

@@ -1,11 +1,32 @@
-.input {
-  width: 100%;
+.input1 {
+  width: 400px;
 }
+.input2 {
+  width: 400px;
+  margin-right: 90px;
+}
+.input1,
+.input2 {
+  padding: 15px;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  background-color: rgb(194, 191, 191);
+
+  border-radius: 20px;
+}
+
 .button1 {
   min-width: 80px;
+  margin-top: 6px;
   background-color: green;
   padding: 10px;
   color: white;
   border: none;
   border-radius: 10px;
+}
+.row {
+  margin-top: 10px;
+  margin-left: -9px;
+  display: flex;
 }

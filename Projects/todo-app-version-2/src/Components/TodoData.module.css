@@ -1,13 +1,35 @@
 .button {
   min-width: 80px;
+  margin-top: 7px;
   background-color: rgb(180, 4, 4);
   padding: 10px;
   color: white;
+  margin-left: 0px;
   border: none;
   border-radius: 10px;
 }
-.kg-row {
-  margin-top: 20px;
+.inp1 {
+  width: 400px;
+}
+
+.inp1,
+.inp2 {
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: rgb(232, 232, 232);
+  box-shadow: 2px 2px 5px 0px rgba(166, 203, 240, 0.3);
+  border-radius: 20px;
+}
+
+li {
+  list-style: none;
+
+  text-align: left;
+}
+.row {
+  margin-top: 10px;
+  margin-left: -9px;
   display: flex;
-  justify-content: space-between;
 }
