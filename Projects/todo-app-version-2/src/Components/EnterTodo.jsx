@@ -1,8 +1,9 @@
 import styles from "./EnterTodo.module.css";
+import { IoAddCircle } from "react-icons/io5";
 import { useState } from "react";
 function EnterTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [dueDate, setDueDate] = useState("");
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
@@ -38,13 +39,10 @@ function EnterTodo({ onNewItem }) {
           />
         </div>
         <div className="col-2">
-          <button
-            type="button"
+          <IoAddCircle
             className={styles["button1"]}
             onClick={handleButtonClicked}
-          >
-            Enter
-          </button>
+          />
         </div>
       </div>
     </>

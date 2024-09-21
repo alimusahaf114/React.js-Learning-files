@@ -1,4 +1,5 @@
 import styles from "./TodoData.module.css";
+import { MdDelete } from "react-icons/md";
 function TodoData({ todoItem, todoDate, onDeleteClick }) {
   return (
     <>
@@ -10,13 +11,10 @@ function TodoData({ todoItem, todoDate, onDeleteClick }) {
           <li className={styles.inp1}>{todoDate}</li>
         </div>
         <div className="col-2">
-          <button
-            type="button"
+          <MdDelete
             className={styles["button"]}
             onClick={() => onDeleteClick(todoItem)}
-          >
-            Delete
-          </button>
+          />
         </div>
       </div>
     </>
