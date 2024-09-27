@@ -1,24 +1,21 @@
-import styles from "./TodoData.module.css";
-import { MdDelete } from "react-icons/md";
-function TodoData({ todoItem, todoDate, onDeleteClick }) {
+function TodoItem({ todoName, todoDate, onDeleteClick }) {
   return (
-    <>
-      <div className={styles.row}>
-        <div className=" col-6 ">
-          <li className={styles.inp1}>{todoItem}</li>
-        </div>
-        <div className=" col-4">
-          <li className={styles.inp1}>{todoDate}</li>
-        </div>
+    <div className="container">
+      <div className="row kg-row">
+        <div className="col-6">{todoName}</div>
+        <div className="col-4">{todoDate}</div>
         <div className="col-2">
-          <MdDelete
-            className={styles["button"]}
-            onClick={() => onDeleteClick(todoItem)}
-          />
+          <button
+            type="button"
+            className="btn btn-danger kg-button"
+            onClick={() => onDeleteClick(todoName)}
+          >
+            Delete
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-export default TodoData;
+export default TodoItem;

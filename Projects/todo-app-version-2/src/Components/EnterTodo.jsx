@@ -1,52 +1,49 @@
-import styles from "./EnterTodo.module.css";
-import { IoAddCircle } from "react-icons/io5";
 import { useState } from "react";
-function EnterTodo({ onNewItem }) {
-  const [todoName, setTodoName] = useState("");
-  const [dueDate, setDueDate] = useState("");
+
+function AddTodo({ onNewItem }) {
+  const [todoName, setTodoName] = useState();
+  const [dueDate, setDueDate] = useState();
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
   };
+
   const handleDateChange = (event) => {
     setDueDate(event.target.value);
   };
 
-  const handleButtonClicked = () => {
+  const handleAddButtonClicked = () => {
     onNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
   };
 
   return (
-    <>
-      <div className={styles.row}>
+    <div className="container text-center">
+      <div className="row kg-row">
         <div className="col-6">
           <input
             type="text"
+            placeholder="Enter Todo Here"
             value={todoName}
-            placeholder="Enter text here..."
-            className={styles.input1}
             onChange={handleNameChange}
           />
         </div>
         <div className="col-4">
-          <input
-            className={styles.input2}
-            type="date"
-            value={dueDate}
-            onChange={handleDateChange}
-          />
+          <input type="date" value={dueDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <IoAddCircle
-            className={styles["button1"]}
-            onClick={handleButtonClicked}
-          />
+          <button
+            type="button"
+            className="btn btn-success kg-button"
+            onClick={handleAddButtonClicked}
+          >
+            Add
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-export default EnterTodo;
+export default AddTodo;
